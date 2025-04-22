@@ -1,0 +1,23 @@
+{
+  "name": "footy",
+  "version": "0.0.1",
+  "description": "Global CLI for getting football league stats",
+  "main": "index.js",
+  "bin": {
+    "footy": "./index.js"
+  },
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbakchr/footy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbakchr/footy/issues"
+  },
+  "homepage": "https://github.com/jbakchr/footy#readme"
+}
