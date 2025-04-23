@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/jbakchr/footy#readme",
   "dependencies": {
-    "commander": "^13.1.0"
+    "axios": "^1.8.4",
+    "commander": "^13.1.0",
+    "dotenv": "^16.5.0"
   }
 }
