@@ -2,6 +2,7 @@
 
 const { program } = require("commander");
 const { version } = require("./package.json");
+const leagues = require("./leagues/leagues");
 
 program
   .name("footy")
@@ -9,7 +10,8 @@ program
   .version(version)
   .argument("<league>", "league to show standings for")
   .action((league) => {
-    console.log(league);
+    const leagueId = leagues[league];
+    console.log(leagueId);
   });
 
 program.parse();
