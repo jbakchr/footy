@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/jbakchr/footy/issues"
   },
-  "homepage": "https://github.com/jbakchr/footy#readme"
+  "homepage": "https://github.com/jbakchr/footy#readme",
+  "dependencies": {
+    "commander": "^13.1.0"
+  }
 }
