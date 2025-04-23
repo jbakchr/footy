@@ -29,7 +29,7 @@ program
 
       const p = new Table({
         columns: [
-          { name: "#", alignment: "right" }, // with alignment and color
+          { name: "#", alignment: "right" },
           { name: "Team", alignment: "left" },
           { name: "Pl", alignment: "right" },
           { name: "W", alignment: "right" },
@@ -40,7 +40,7 @@ program
       });
 
       response.data.response.standing.forEach(
-        ({ idx, name, played, wins, draws, losses, pts }, i) => {
+        ({ idx, name, played, wins, draws, losses, pts }) => {
           p.addRow({
             "#": idx,
             Team: name,
