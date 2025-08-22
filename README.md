@@ -17,7 +17,7 @@ npm install -g footy
 
 ## Setup
 
-To use the CLI use must:
+To use the CLI you must:
 
 1. Get an api key from https://rapidapi.com/Creativesdev/api/free-api-live-football-data
 2. Create .env file with a key of "API_KEY" and your api key as the value
