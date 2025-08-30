@@ -1,13 +1,13 @@
 {
   "name": "footy",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Global CLI for getting football league stats",
-  "main": "index.js",
+  "main": "footy.js",
   "bin": {
-    "footy": "./index.js"
+    "footy": "./bin/footy.js"
   },
   "scripts": {
-    "start": "node index"
+    "start": "node ./bin/footy.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/jbakchr/footy#readme",
   "dependencies": {
     "axios": "^1.8.4",
+    "cheerio": "^1.1.2",
     "commander": "^13.1.0",
     "console-table-printer": "^2.12.1",
     "dotenv": "^16.5.0"
