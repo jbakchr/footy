@@ -40,15 +40,15 @@ const extractStandingData = (html) => {
     const tds = $(el).find("td");
 
     standingsData.push({
-      "#": tds.eq(0).find(".rank-number").text(),
-      Klub: tds.eq(0).find(".league-standings-link span").text().trim(),
-      K: tds.eq(1).text(),
-      V: tds.eq(2).text(),
-      U: tds.eq(3).text(),
-      T: tds.eq(4).text(),
-      "+": tds.eq(5).text(),
-      "-": tds.eq(6).text(),
-      P: tds.eq(7).text(),
+      Pos: tds.eq(0).find(".rank-number").text(),
+      Team: tds.eq(0).find(".league-standings-link span").text().trim(),
+      Pl: tds.eq(1).text(),
+      W: tds.eq(2).text(),
+      D: tds.eq(3).text(),
+      L: tds.eq(4).text(),
+      GF: tds.eq(5).text(),
+      GA: tds.eq(6).text(),
+      Pts: tds.eq(7).text(),
     });
   });
 
@@ -65,9 +65,9 @@ const extractTopscorerData = (html) => {
     const el = lis.eq(i);
 
     topscorer.push({
-      Spiller: el.find(".player-name").text(),
-      Klub: el.find(".team-name").text(),
-      Mål: el.find(".goals").text(),
+      Player: el.find(".player-name").text(),
+      Team: el.find(".team-name").text(),
+      Goals: el.find(".goals").text(),
     });
   }
 
@@ -84,8 +84,8 @@ const extractAssistsData = (html) => {
     const el = lis.eq(i);
 
     assists.push({
-      Spiller: el.find(".player-name").text(),
-      Klub: el.find(".team-name").text(),
+      Player: el.find(".player-name").text(),
+      Team: el.find(".team-name").text(),
       Assists: el.find(".goals").text(),
     });
   }
@@ -104,9 +104,9 @@ const extractCardsData = (html) => {
     const spans = $(el).find("span");
 
     cards.push({
-      Klub: spans.eq(0).text(),
-      Gult: spans.eq(1).text(),
-      Rødt: spans.eq(2).text(),
+      Team: spans.eq(0).text(),
+      Yellow: spans.eq(1).text(),
+      Red: spans.eq(2).text(),
       Total: spans.eq(3).text(),
     });
   });
