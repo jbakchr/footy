@@ -2,10 +2,12 @@
 
 Global CLI for showing football league table standings in the terminal for:
 
+- Superligaen (sl)
 - Premier League (pl)
 - La Liga (ll)
 - Bundesliga (bl)
 - Seria A (sa)
+- Ligue 1 (l1)
 
 ## Installation
 
@@ -14,13 +16,6 @@ Install globally using npm:
 ```sh
 npm install -g footy
 ```
-
-## Setup
-
-To use the CLI you must:
-
-1. Get an api key from https://rapidapi.com/Creativesdev/api/free-api-live-football-data
-2. Create .env file with a key of "API_KEY" and your api key as the value
 
 ## Example usage
 
