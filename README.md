@@ -56,6 +56,23 @@ This will produce the following output in your terminal:
 └────┴─────────────────────────┴────┴────┴────┴────┴─────┘
 ```
 
+## Options
+
+One can use the following options for outputting either the legaue standing, topscorers, assists or cards:
+
+- standing (default)
+- goals
+- assists
+- cards
+
+### Example use of option
+
+To show the topscorers for a league instead of the (default) standing, one would execute the following command:
+
+```sh
+footy pl -s goals
+```
+
 ## License
 
 MIT
